@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4faff;
+    color: #333;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2D185E;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00FF66;
+  }
+  
+  .logo-img {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .login-btn {
+    background-color: #00FF66;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .about-hero {
+    background-color: #512C85;
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+  }
+  
+  .about-hero h1 {
+    font-size: 3rem;
+  }
+  
+  .about-hero p {
+    font-size: 1.2rem;
+  }
+  
+  .mission-vision {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 20px;
+    background-color: #f4faff;
+  }
+  
+  .mission, .vision {
+    max-width: 500px;
+  }
+  
+  .mission h2, .vision h2 {
+    font-size: 2rem;
+    color: #512C85;
+  }
+  
+  .mission p, .vision p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  .how-it-works-artists, .how-it-works-contractors {
+    padding: 50px 20px;
+    background-color: #fff;
+  }
+  
+  .how-it-works-artists h2, .how-it-works-contractors h2 {
+    font-size: 2rem;
+    color: #512C85;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+  }
+  
+  .feature-box {
+    background-color: #f4faff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 30%;
+    text-align: center;
+  }
+  
+  .feature-box h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .feature-box p {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .partners {
+    background-color: #f4faff;
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .partners h2 {
+    font-size: 2rem;
+    color: #512C85;
+    margin-bottom: 20px;
+  }
+  
+  footer {
+    background-color: #2D185E;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-logo {
+    width: 100px;
+  }
+  
+  .social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.2rem;
+  }
+  
+  .footer-right a {
+    color: #00FF66;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer-right a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-center p {
+    margin-top: 20px;
+    color: #aaa;
+  }
+  
+  @media (max-width: 768px) {
+    .mission-vision, .features {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .feature-box {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .footer-container {
+      flex-direction: column;
+    }
+  }
+  

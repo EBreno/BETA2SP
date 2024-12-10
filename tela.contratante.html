@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sync and Play - Perfil do Contratante</title>
+  <link rel="stylesheet" href="tela.contratante.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="C:\Users\Brenoww\Desktop\P&S3\image\logo-SNP.png" alt="Logo" class="logo-img"> Sync and Play
+    </div>    
+    <nav>
+      <ul>
+        <li><a href="tela.contratante.html">Home</a></li>
+        <li><a href="busca.artista.html">Artistas</a></li>
+        <li><a href="busca.contratante.html">Contratantes</a></li>
+        <li><a href="sobre.html#sobre">Sobre</a></li>
+      </ul>
+    </nav>
+    <button class="login-btn">Log Out</button>
+    <script>
+      document.querySelector(".login-btn").addEventListener("click", function() {
+        window.location.href = "index.html";
+    });
+    </script>
+  </header>
+
+  <main>
+    <!-- Seção do Perfil -->
+    <section class="profile-section">
+      <div class="profile-header">
+        <img src="C:\Users\Brenoww\Desktop\P&S3\image\png-transparent-computer-icons-businessperson-others-miscellaneous-fictional-character-glasses.png" alt="Logo da Empresa" class="company-logo">
+        <div class="company-info">
+          <h1>Eventos XYZ</h1>
+          <p>Tipo de Evento: Corporativo</p>
+          <p>Localização: São Paulo, SP</p>
+        </div>
+        <button class="edit-profile-btn">Editar Perfil</button>
+      </div>
+    </section>
+
+    <!-- Seção de Gerenciamento -->
+    <section class="management-section">
+      <h2>Gerenciamento de Ofertas</h2>
+      <div class="management-options">
+        <!-- Gerenciar Ofertas -->
+        <div class="management-card">
+          <h3>Gerenciar Ofertas de Trabalho</h3>
+          <p>Edite, exclua ou crie novas ofertas de trabalho para artistas.</p>
+          <button class="cta-btn">Gerenciar Ofertas</button>
+        </div>
+
+        <!-- Artistas Interessados -->
+        <div class="management-card">
+          <h3>Artistas Interessados</h3>
+          <p>Visualize os artistas que se candidataram às suas vagas.</p>
+          <button class="cta-btn">Ver Artistas Interessados</button>
+        </div>
+
+        <!-- Gerenciar Pagamento -->
+        <div class="management-card">
+          <h3>Gerenciar Dados de Pagamento</h3>
+          <p>Atualize suas informações de pagamento para garantir suas transações.</p>
+          <button class="cta-btn">Gerenciar Pagamento</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Artistas Interessados -->
+    <section class="interested-artists-section">
+      <h2>Artistas Interessados</h2>
+      <div class="interested-artists-grid">
+        <!-- Artista Interessado 1 -->
+        <div class="artist-card">
+          <img src="/image/artist1.jpg" alt="Artista Interessado 1">
+          <h3>João Silva</h3>
+          <p>Gênero Musical: Rock</p>
+          <p>Localização: São Paulo, SP</p>
+          <button class="profile-btn">Ver Perfil do Artista</button>
+        </div>
+
+        <!-- Artista Interessado 2 -->
+        <div class="artist-card">
+          <img src="/image/artist2.jpg" alt="Artista Interessado 2">
+          <h3>Maria Souza</h3>
+          <p>Gênero Musical: Samba</p>
+          <p>Localização: Rio de Janeiro, RJ</p>
+          <button class="profile-btn">Ver Perfil do Artista</button>
+        </div>
+
+        <!-- Mais artistas... -->
+      </div>
+    </section>
+
+    <!-- Seção de Pagamento -->
+    <section class="payment-section">
+      <h2>Dados de Pagamento</h2>
+      <div class="payment-details">
+        <p>Cartão de Crédito Atual: **** **** **** 1234</p>
+        <p>Próxima Renovação: 15/10/2024</p>
+        <button class="cta-btn">Atualizar Cartão</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <img src="C:\Users\Brenoww\Desktop\P&S3\image\logo-SNP.png" alt="Logo" class="footer-logo">
+        <div class="social-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <a href="#">Termos de Serviço</a>
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Acordo de Processamento de Dados</a>
+      </div>
+    </div>
+    <div class="footer-center">
+      <p>© 2024 Sync and Play | Todos os direitos reservados</p>
+    </div>
+<!-- Modal para Editar Perfil -->
+<div id="editModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2>Editar Perfil</h2>
+    <form id="editForm">
+      <div class="form-group">
+        <label for="editName">Nome</label>
+        <input type="text" id="editName" name="name" placeholder="Nome da empresa" required>
+      </div>
+      <div class="form-group">
+        <label for="editGenre">Gênero Musical</label>
+        <input type="text" id="editGenre" name="genre" placeholder="Gênero musical" required>
+      </div>
+      <div class="form-group">
+        <label for="editLocation">Localização</label>
+        <input type="text" id="editLocation" name="location" placeholder="Localização" required>
+      </div>
+      <button type="submit" class="cta-btn">Salvar Alterações</button>
+    </form>
+  </div>
+</div>
+
+  </footer>
+  
+  <script src="perfil.contratante.js"></script>
+</body>
+</html>

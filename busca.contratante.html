@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sync and Play - Resultados de Busca</title>
+  <link rel="stylesheet" href="busca.contratante.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src=".\image\logo-SNP.png" alt="Logo" class="logo-img"> Sync and Play
+    </div>    
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sobre.html">Sobre</a></li>
+        <li><a href="artistas.html">Artistas</a></li>
+        <li><a href="contratantes.html">Contratantes</a></li>
+        <li><a href="contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Seção de Filtros de Busca -->
+    <section class="filter-section">
+      <h2>Resultados da Busca</h2>
+      <form id="filter-form">
+        <div class="form-group">
+          <label for="search-type">Tipo de Busca</label>
+          <select id="search-type" name="search-type">
+            <option value="artistas">Artistas</option>
+            <option value="eventos">Eventos</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="location">Localização</label>
+          <input type="text" id="location" name="location" placeholder="Cidade ou Estado">
+        </div>
+        
+        <button type="submit" class="cta-btn">Filtrar</button>
+      </form>
+    </section>
+
+    <!-- Seção de Resultados -->
+    <section class="results-section">
+      <h2>Resultados Encontrados</h2>
+      <div class="results-grid">
+        <!-- Resultado 1 -->
+        <div class="result-card">
+          <img src="./image/artist1.jpg" alt="Resultado 1">
+          <h3>João Silva</h3>
+          <p>Gênero Musical: Rock</p>
+          <p>Localização: São Paulo, SP</p>
+          <button class="profile-btn">Ver Perfil</button>
+        </div>
+
+        <!-- Resultado 2 -->
+        <div class="result-card">
+          <img src="./image/event1.jpg" alt="Resultado 2">
+          <h3>Festival de Música</h3>
+          <p>Tipo de Evento: Festival</p>
+          <p>Localização: Rio de Janeiro, RJ</p>
+          <button class="profile-btn">Ver Detalhes do Evento</button>
+        </div>
+
+        <!-- Mais Resultados... -->
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-left">
+        <img src=".\image\logo-SNP.png" alt="Logo" class="footer-logo">
+        <div class="social-icons">
+          <a href="#"><i class="fa fa-facebook"></i></a>
+          <a href="#"><i class="fa fa-instagram"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <a href="#">Termos de Serviço</a>
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Acordo de Processamento de Dados</a>
+      </div>
+    </div>
+    <div class="footer-center">
+      <p>© 2024 Sync and Play | Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <script src="resultados.js"></script>
+</body>
+</html>

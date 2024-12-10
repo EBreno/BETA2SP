@@ -1,0 +1,332 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  p {
+    display: center;
+    font-size: 22px;
+}
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #5d2e8c;
+    color: white;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2D185E;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00FF66;
+}
+
+@font-face {
+    font-family: 'dela-gothic-one';
+    src: url('.\font\DelaGothicOne-Regular.ttf') format('truetype'); 
+    }
+
+.logo {
+    font-family: 'dela-gothic-one', DelaGothicOne-Regular;
+}
+.logo-img {
+  width: 80px;
+  height: auto; 
+  margin-right: 10px; 
+  vertical-align: middle; 
+}
+
+@font-face {
+    font-family: 'Open-sans';
+    src: url('.\font\OpenSans-Bold.ttf') format('truetype'); 
+  }
+  
+  nav li a, .cta {
+    font-family: 'Open-sans', OpenSans-Bold; 
+  }
+
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  
+  .login-btn {
+    background-color: #00FF66;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .hero {
+    background-image: url('.\image\LP2.png');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+  }
+  
+  .cta {
+    background-color: #00FF66;
+    padding: 10px 20px;
+    color: #512C85;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    margin-top: 20px;
+    display: inline-block;
+  }
+  
+  /* Seção de Vantagens */
+  .service_section {
+    padding: 50px 20px;
+    background-color: #f4faff;
+    text-align: center;
+  }
+  
+  .heading_container {
+    margin-bottom: 40px;
+  }
+  
+  .heading_container h2 {
+    font-size: 2.5rem;
+    color: #512C85;
+  }
+  
+  /* Layout dos Cards */
+  .row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .box {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .img-box {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .img-box i {
+    font-size: 3rem;
+    color: #512C85;
+  }
+  
+  .detail-box h5 {
+    font-size: 1.5rem;
+    color: #512C85;
+    margin-bottom: 15px;
+  }
+  
+  .advantage-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .advantage-list li {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .advantage-list li i {
+    color: #00FF66;
+    margin-right: 10px;
+  }
+  
+  .box a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #00FF66;
+    color: #512C85;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .box a:hover {
+    background-color: #ccff00;
+  }
+
+  @media (max-width: 768px) {
+    .row {
+      grid-template-columns: 1fr;
+    }
+  
+    .box {
+      margin-bottom: 20px;
+    }
+  }
+  
+  /* Seção de Planos */
+  .pricing-section {
+    background-color: #512C85;
+    padding: 40px;
+    text-align: center;
+    color: #00FF66;
+  }
+  
+  .pricing-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .pricing-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .card {
+    background-color: #f4faff;
+    color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 22%;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .most-popular {
+    border: 2px solid #00FF66;
+  }
+  
+  .buy-now {
+    background-color: #00FF66;
+    color: #512C85;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .buy-now.popular {
+    background-color: #ff9900;
+  }
+  
+  /* Seção Sobre */
+  .about-section {
+    padding: 40px;
+    background-color: #f4faff;
+    color: #5d2e8c;
+    text-align: center;
+  }
+  
+  .about-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-section p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  /* Estilo do Rodapé */
+  footer {
+    background-color: #2D185E;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-logo {
+    width: 100px;
+  }
+  
+  .social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.2rem;
+  }
+  
+  .footer-right a {
+    color: #00FF66;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer-right a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-center p {
+    margin-top: 20px;
+    color: #aaa;
+  }
+  
+  @media (max-width: 768px) {
+    .pricing-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+
+  ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0; 
+  }
+  
+  li {
+    margin: 10px 0;
+  }

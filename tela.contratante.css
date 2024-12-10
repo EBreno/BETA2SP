@@ -1,0 +1,311 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4faff;
+  color: #333;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #2D185E;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00FF66;
+}
+
+.logo-img {
+  width: 80px;
+  height: auto;
+  margin-right: 10px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.login-btn {
+  background-color: #00FF66;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.profile-section {
+  padding: 50px 20px;
+  background-color: #512C85;
+  color: white;
+  text-align: center;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 0 auto;
+  gap: 20px;
+}
+
+.company-logo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.company-info {
+  flex: 1;
+  text-align: left;
+}
+
+.company-info h1 {
+  font-size: 2rem;
+}
+
+.company-info p {
+  font-size: 1.2rem;
+}
+
+.edit-profile-btn {
+  padding: 10px 20px;
+  background-color: #00FF66;
+  color: #512C85;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.management-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.management-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #512C85;
+}
+
+.management-options {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.management-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 250px;
+}
+
+.management-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #512C85;
+}
+
+.management-card p {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.cta-btn {
+  padding: 10px 20px;
+  background-color: #00FF66;
+  color: #512C85;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.cta-btn:hover {
+  background-color: #ccff00;
+}
+
+.interested-artists-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.interested-artists-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #512C85;
+}
+
+.interested-artists-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.artist-card {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.artist-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.artist-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: #512C85;
+}
+
+.artist-card p {
+  font-size: 1rem;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.profile-btn {
+  padding: 10px 15px;
+  background-color: #00FF66;
+  color: #512C85;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.profile-btn:hover {
+  background-color: #ccff00;
+}
+
+.payment-section {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.payment-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+  color: #512C85;
+}
+
+.payment-details {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.payment-details p {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+footer {
+  background-color: #2D185E;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  width: 100px;
+}
+
+.social-icons a {
+  color: white;
+  margin: 0 10px;
+  font-size: 1.2rem;
+}
+
+.footer-right a {
+  color: #00FF66;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.footer-right a:hover {
+  text-decoration: underline;
+}
+
+.footer-center p {
+  margin-top: 20px;
+  color: #aaa;
+}
+
+@media (max-width: 768px) {
+  .profile-header {
+    flex-direction: column;
+  }
+
+  .management-options {
+    flex-direction: column;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+/* Modal */
+.modal {
+  display: none; /* Inicialmente escondido */
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fundo escuro */
+}
+
+.modal-content {
+  background-color: white;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 5px;
+  width: 50%;
+}
+
+.close {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  float: right;
+  cursor: pointer;
+}

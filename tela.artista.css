@@ -1,0 +1,322 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4faff;
+    color: #333;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #2D185E;
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00FF66;
+  }
+  
+  .logo-img {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+  }
+  
+  nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .login-btn {
+    background-color: #00FF66;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .profile-section {
+    padding: 50px 20px;
+    background-color: #512C85;
+    color: white;
+    text-align: center;
+  }
+  
+  .profile-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 800px;
+    margin: 0 auto;
+    gap: 20px;
+  }
+  
+  .artist-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+  
+  .artist-info {
+    flex: 1;
+    text-align: left;
+  }
+  
+  .artist-info h1 {
+    font-size: 2rem;
+  }
+  
+  .artist-info p {
+    font-size: 1.2rem;
+  }
+  
+  .edit-profile-btn {
+    padding: 10px 20px;
+    background-color: #00FF66;
+    color: #512C85;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .management-section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .management-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #512C85;
+  }
+  
+  .management-options {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .management-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+  }
+  
+  .management-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #512C85;
+  }
+  
+  .management-card p {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .cta-btn {
+    padding: 10px 20px;
+    background-color: #00FF66;
+    color: #512C85;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .cta-btn:hover {
+    background-color: #ccff00;
+  }
+  
+  .portfolio-section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .portfolio-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #512C85;
+  }
+  
+  .portfolio-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .portfolio-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 250px;
+  }
+  
+  .portfolio-item img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .subscription-section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .subscription-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #512C85;
+  }
+  
+  .subscription-details {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  .subscription-details p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  footer {
+    background-color: #2D185E;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .footer-logo {
+    width: 100px;
+  }
+  
+  .social-icons a {
+    color: white;
+    margin: 0 10px;
+    font-size: 1.2rem;
+  }
+  
+  .footer-right a {
+    color: #00FF66;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .footer-right a:hover {
+    text-decoration: underline;
+  }
+  
+  .footer-center p {
+    margin-top: 20px;
+    color: #aaa;
+  }
+  
+  @media (max-width: 768px) {
+    .profile-header {
+      flex-direction: column;
+    }
+  
+    .management-options {
+      flex-direction: column;
+    }
+  
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  
+  /* Modal */
+.modal {
+  display: none; /* Esconde o modal por padrão */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4); /* Fundo semitransparente */
+}
+
+.modal-content {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 10px;
+  width: 40%; /* Tamanho do modal */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+form label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+form input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
